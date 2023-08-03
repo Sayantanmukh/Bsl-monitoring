@@ -1,4 +1,4 @@
-/* .navbar {
+.navbar {
     background-color: #1f5156;
     height: 80px;
     display: flex;
@@ -118,14 +118,14 @@
 
 
 
-  } */
+  } 
 
 
 
 
 
 
-
+/* 
   
 
   .nav-container {
@@ -188,6 +188,13 @@
     font-size: 2rem;
     background: none;
   }
+
+  .nav-links {
+    padding: 1.5rem;
+    width: 100%;
+    display: table;
+  }
+
   @media screen and (max-width: 960px) {
   .nav-menu {
     background-color: #060b26;
@@ -200,6 +207,8 @@
     left: -100%;
     transition: 850ms;
   }
+
+  
   
   .nav-menu.active {
     left: 0;
@@ -259,4 +268,4 @@
 }
   span {
     margin-left: 16px;
-  }
+  } */

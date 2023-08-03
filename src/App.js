@@ -1,6 +1,8 @@
 import "./App.css";
 import NavBar from "./components/NavBar";
 import { BrowserRouter as Router,  Route, Routes } from "react-router-dom";
+import  Sidebar  from "./components/Sidebar";
+
 // import { Home } from "./components/Pages/Home";
 // import { About } from "./components/Pages/About";
 // import { Blog } from "./components/Pages/Blog";
@@ -10,7 +12,8 @@ function App() {
   return (
     <>
       <Router>
-        <NavBar />
+        <Sidebar/>
+        {/* <NavBar/> */}
 
         {/* <div className="pages">
           <Routes>

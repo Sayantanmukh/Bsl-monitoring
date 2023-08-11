@@ -1,7 +1,6 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
-import NavBar from "./components/NavBar";
-import { BrowserRouter as Router,  Route, Routes } from "react-router-dom";
-import  Sidebar  from "./components/Sidebar";
+import Main from "./pages/Main";
 
 // import { Home } from "./components/Pages/Home";
 // import { About } from "./components/Pages/About";
@@ -12,19 +11,18 @@ function App() {
   return (
     <>
       <Router>
-        <Sidebar/>
-        {/* <NavBar/> */}
+        <Main />
 
-        {/* <div className="pages">
+        <div className="pages">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/" element={<></>} />
+            <Route path="/about" element={<></>} />
+            <Route path="/blog" element={<></>} />
+            <Route path="/contact" element={<></>} />
           </Routes>
-        </div> */}
+        </div>
       </Router>
-  </>
+    </>
   );
 }
 

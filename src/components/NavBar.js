@@ -1,66 +1,48 @@
-import React, { useState } from "react";
-import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
+// import MenuIcon from '@mui/icons-material/Menu';
+// import { Box } from "@mui/material";
+// import MuiAppBar from '@mui/material/AppBar';
+// import IconButton from '@mui/material/IconButton';
+// import { styled, useTheme } from '@mui/material/styles';
+// import Toolbar from '@mui/material/Toolbar';
+// import Typography from '@mui/material/Typography';
+// const drawerWidth = 240;
+// const AppBar = styled(MuiAppBar, {
+//   shouldForwardProp: (prop) => prop !== 'open',
+// })(({ theme, open }) => ({
+//   transition: theme.transitions.create(['margin', 'width'], {
+//     easing: theme.transitions.easing.sharp,
+//     duration: theme.transitions.duration.leavingScreen,
+//   }),
+//   ...(open && {
+//     width: `calc(100% - ${drawerWidth}px)`,
+//     transition: theme.transitions.create(['margin', 'width'], {
+//       easing: theme.transitions.easing.easeOut,
+//       duration: theme.transitions.duration.enteringScreen,
+//     }),
+//     marginRight: drawerWidth,
+//   }),
+// }));
 
-import { NavLink, Link } from "react-router-dom";
-import "./NavBar.css";
-import { SidebarData } from './SidebarData';
+// function NavBar() {
+//   const theme = useTheme();
+//   <Box sx={{ display: 'flex' }}>
+//     <AppBar position="fixed" open={open}>
+//       <Toolbar>
+//         <Typography variant="h6" noWrap sx={{ flexGrow: 1 }} component="div">
+//           Bluescope Monitoring
+//         </Typography>
+//         <IconButton
+//           color="inherit"
+//           aria-label="open drawer"
+//           edge="end"
+//           onClick={handleDrawerOpen}
+//           sx={{ ...(open && { display: 'none' }) }}
+//         >
+//           <MenuIcon />
+//         </IconButton>
+//       </Toolbar>
+//     </AppBar>
+//   </Box>
+// }
 
-
-
-function NavBar() {
-  const [sidebar, setSidebar] = useState(false);
-  const [click, setClick] = useState(false);
-  // const showSidebar = () => setSidebar(!sidebar);
-  const handleClick = () => setClick(!click);
-  return (
-    <>
-      <nav className="navbar">
-        <div className="nav-container">
-          <NavLink exact to="/" className="nav-logo">
-            Bluescope Monitoring
-            <i className="fas fa-code"></i>
-          </NavLink>
-
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
-
-            <li className="nav-item">
-              <NavLink
-                exact
-                to="/menu"
-                activeClassName="active"
-                className="nav-links"
-                onClick={handleClick}
-              >
-              
-
-                Menu
-              
-              
-              </NavLink>
-              </li>
-              
-            
-
-            <li className="nav-item">
-              <NavLink
-                exact
-                to="/login"
-                activeClassName="active"
-                className="nav-links"
-                onClick={handleClick}
-              >
-                Login
-              </NavLink>
-            </li>
-          </ul>
-          <div className="nav-icon" onClick={handleClick}>
-            <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
-          </div>
-        </div>
-      </nav>
-    </>
-  );
-}
-
-export default NavBar;
+// export default NavBar;

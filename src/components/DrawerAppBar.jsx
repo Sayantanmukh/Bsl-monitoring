@@ -1,8 +1,7 @@
 /* This file contains code for responsive navbar and sidebar together */
 
 
-import * as React from 'react';
-import PropTypes from 'prop-types';
+import MenuIcon from '@mui/icons-material/Menu';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -13,10 +12,11 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
-import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
+import PropTypes from 'prop-types';
+import * as React from 'react';
+import ViewComponent from './ViewComponent';
 
 const drawerWidth = 240;
 const navItems = ['Home', 'About', 'Contact'];
@@ -94,9 +94,10 @@ function DrawerAppBar(props) {
           {drawer}
         </Drawer>
       </Box>
-      <Box component="main" sx={{ p: 3 }}>
+      <Box width='100%' component="main" sx={{ p: 3 }}>
         <Toolbar />
-
+        {/* here goes the view */}
+        <ViewComponent />
       </Box>
     </Box>
   );

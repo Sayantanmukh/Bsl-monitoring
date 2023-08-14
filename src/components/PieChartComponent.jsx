@@ -7,7 +7,36 @@ const data = [
     { id: 2, value: 20, label: 'series C' },
 ];
 
+const MINWIDTH = 820;
+
+
+const setWidth = () => {
+    const winW = window.innerWidth;
+
+
+    if (winW > MINWIDTH) {
+        console.log("A");
+        return window.innerWidth * 0.50;
+    } else {
+        console.log("B");
+        return window.innerWidth * 0.90;
+    }
+}
+
+const setHeight = () => {
+    const winH = window.innerHeight;
+
+    if (winH > MINWIDTH) {
+        console.log("C");
+        return window.innerHeight * 0.30
+    } else {
+        console.log("D")
+        return window.innerHeight * 0.50
+    }
+}
+
 export default function PieChartComponent() {
+    console.log(window.innerWidth);
     return (
         <PieChart
             series={[
@@ -22,8 +51,8 @@ export default function PieChartComponent() {
                     fill: 'gray',
                 },
             }}
-            width={window.innerWidth*0.90}
-            height={window.innerHeight*0.50}
+            width={setWidth()}
+            height={setHeight()}
         />
     );
 }

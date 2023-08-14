@@ -7,7 +7,7 @@ function GridComponent() {
         <div style={
             {
                 display: 'flex',
-                flexFlow: 'column wrap',
+                flexFlow: 'row wrap',
                 justifyContent: 'space-around',
                 alignItems: 'center'
             }

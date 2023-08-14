@@ -22,8 +22,8 @@ export default function PieChartComponent() {
                     fill: 'gray',
                 },
             }}
-            width={window.innerWidth/1.2}
-            height={window.innerHeight/2.2}
+            width={window.innerWidth*0.90}
+            height={window.innerHeight*0.50}
         />
     );
 }

@@ -12,8 +12,8 @@ export default function LineChartComponent() {
                     data: [2, 5.5, 2, 8.5, 1.5, 5],
                 },
             ]}
-            width={window.innerWidth/1.2}
-            height={window.innerHeight/2.2}
+            width={window.innerWidth*0.98}
+            height={window.innerHeight*0.40}
         />
     );
 }
